@@ -35,11 +35,11 @@ app.post('/screenshot', async (req, res) => {
       deviceScaleFactor: 1
     });
     await page.setContent(html, {
-      waitUntil: 'networkidle2',
-      timeout: 20000
+      waitUntil: 'load',
+      timeout: 30000
     });
     // Aguarda fontes web carregarem
-    await new Promise(r => setTimeout(r, 800));
+    await new Promise(r => setTimeout(r, 1500));
 
     const buf = await page.screenshot({
       type: 'png',
