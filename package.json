@@ -1,0 +1,16 @@
+{
+  "name": "html-screenshot-service",
+  "version": "1.0.0",
+  "description": "HTML to PNG screenshot service — Coffee News Hub AI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^21.11.0"
+  }
+}
